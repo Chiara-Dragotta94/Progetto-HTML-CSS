@@ -22,8 +22,8 @@ body {
 .navbar .navbar-brand {
   width: 80px;
   height: 55px;
-  margin-left: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-right: 15px;
 }
 .navbar .navbar-collapse {
   font-family: "Share Tech Mono", serif;
@@ -32,6 +32,8 @@ body {
 .navbar .navbar-nav {
   align-items: center;
   gap: 25px;
+  padding-right: 15px;
+  padding-top: 10px;
 }
 .navbar .navbar-nav .nav-link {
   color: #e9916e;
@@ -191,7 +193,7 @@ footer {
   width: 100%;
   background-color: #1f1f1f;
   color: #ffffff;
-  padding: 40px 20px;
+  padding: 40px 60px;
   text-align: center;
 }
 footer .row-custom {
@@ -217,16 +219,29 @@ footer .col {
 .btn-custom:hover {
   background-color: #e9916e !important;
   color: black;
+  border: 1px solid black;
 }
 
 .container-form {
   font-family: "Share Tech Mono", serif;
-  max-width: 600px;
-  margin: 0 auto 30px;
+  max-width: 800px;
+  max-height: 550px;
   padding-top: 45px;
   border: 1px solid black;
   background-color: #e6e6e6;
   border-radius: 10px;
+  padding-left: 20px;
+  margin-bottom: 100px;
+  justify-self: center;
+}
+
+label {
+  min-width: 250px !important;
+}
+
+.text-center {
+  margin-right: 40px;
+  padding-bottom: 0px;
 }
 
 .form-control:focus {
@@ -483,6 +498,62 @@ ul li {
   }
   .btn-custom {
     font-size: 13px;
+  }
+}
+@media (min-width: 1367px) {
+  .container-form {
+    padding: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .container-form label {
+    min-width: 200px;
+    font-size: 18px;
+  }
+  .form-control {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  .btn-custom {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+  .testo h1 {
+    font-size: 80px;
+  }
+  .testo h3 {
+    font-size: 60px;
+  }
+  .testo2 h1,
+  .testo3 h1 {
+    font-size: 56px;
+  }
+  .testo2 p,
+  .testo3 p {
+    font-size: 22px;
+  }
+  .card {
+    max-width: 300px;
+  }
+  .header-curriculum {
+    padding-left: 80px;
+    gap: 120px;
+  }
+  .profilo {
+    width: 220px;
+  }
+  .info h1 {
+    font-size: 40px;
+  }
+  .info h2 {
+    font-size: 24px;
+  }
+  .section h2 {
+    font-size: 28px;
+  }
+  .section p,
+  .section ul {
+    font-size: 18px;
   }
 }
 
