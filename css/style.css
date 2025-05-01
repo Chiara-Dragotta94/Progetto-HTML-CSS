@@ -13,11 +13,9 @@ body {
   background-color: #1f1f1f;
   transition: height 0.2s ease-in-out;
 }
-.navbar .d-flex {
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0 20px;
+.navbar .navbar-nav .nav-link {
+  white-space: nowrap;
+  display: inline-block;
 }
 .navbar .navbar-brand {
   width: 80px;

@@ -21,12 +21,11 @@ body {
   background-color: $primary-color;
   transition: height 0.2s ease-in-out;
 
-  .d-flex {
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 20px;
+  .navbar-nav .nav-link {
+    white-space: nowrap; 
+    display: inline-block; 
   }
+  
 
   .navbar-brand {
     width: 80px;
@@ -45,6 +44,8 @@ body {
     gap: 25px;
     padding-right: 15px;
     padding-top: 10px;
+
+    
 
     .nav-link {
       color: $secondary-color;
