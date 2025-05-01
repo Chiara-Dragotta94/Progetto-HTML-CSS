@@ -500,5 +500,64 @@ ul li {
     font-size: 13px;
   }
 }
+.container-form {
+  width: 90%;
+  padding: 20px;
+  margin: 20px auto;
+  max-height: unset;
+  box-sizing: border-box;
+}
+
+.container-form .row {
+  flex-direction: column;
+}
+
+.container-form .col-md-6 {
+  width: 100% !important;
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  min-width: unset !important;
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 1367px) {
+  .contenitore2,
+  .contenitore3 {
+    padding: 100px 120px;
+    gap: 80px;
+  }
+  .immagine2,
+  .immagine3 {
+    width: 52%;
+  }
+  .testo2,
+  .testo3 {
+    width: 45%;
+    text-align: left;
+  }
+  .testo2 h1,
+  .testo3 h1 {
+    font-size: 56px;
+    margin-bottom: 25px;
+  }
+  .testo2 p,
+  .testo3 p {
+    font-size: 22px;
+    line-height: 1.8;
+    padding-right: 20px;
+  }
+  .card {
+    max-width: 300px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
