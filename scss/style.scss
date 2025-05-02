@@ -602,38 +602,15 @@ margin-bottom: 5px;
 
 
 // VERSIONE DESKTOP (1366px e oltre)
-@media (min-width: 1367px) {
+@media (max-width: 1920px) {
 
-  .contenitore2,
-  .contenitore3 {
-    padding: 100px 120px;
-    gap: 80px;
+  .contenitore2{
+   display: flex;
+   flex-direction: row;
+   
   }
 
-  .immagine2,
-  .immagine3 {
-    width: 52%;
-  }
-
-  .testo2,
-  .testo3 {
-    width: 45%;
   
-  }
-
-  .testo2 h1,
-  .testo3 h1 {
-    font-size: 56px;
-    margin-bottom: 25px;
-  }
-
-  .testo2 p,
-  .testo3 p {
-    font-size: 22px;
-    line-height: 1.8;
-    padding-right: 20px;
-  }
-
   .card {
     max-width: 300px;
   }
