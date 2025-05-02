@@ -603,6 +603,7 @@ margin-bottom: 5px;
 
 // VERSIONE DESKTOP (1366px e oltre)
 @media (min-width: 1367px) {
+
   .contenitore2,
   .contenitore3 {
     padding: 100px 120px;
@@ -617,7 +618,7 @@ margin-bottom: 5px;
   .testo2,
   .testo3 {
     width: 45%;
-    text-align: left;
+  
   }
 
   .testo2 h1,
