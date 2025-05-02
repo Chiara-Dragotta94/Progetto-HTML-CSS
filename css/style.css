@@ -344,7 +344,7 @@ ul li {
 }
 
 /* === MEDIA QUERIES === */
-@media (max-width: 991.98px) {
+@media (max-width: 1366px) {
   .contenitore,
   .contenitore2,
   .contenitore3,
