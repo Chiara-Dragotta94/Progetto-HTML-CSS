@@ -527,31 +527,10 @@ label {
   margin-bottom: 5px;
 }
 
-@media (min-width: 1367px) {
-  .contenitore2,
-  .contenitore3 {
-    padding: 100px 120px;
-    gap: 80px;
-  }
-  .immagine2,
-  .immagine3 {
-    width: 52%;
-  }
-  .testo2,
-  .testo3 {
-    width: 45%;
-    text-align: left;
-  }
-  .testo2 h1,
-  .testo3 h1 {
-    font-size: 56px;
-    margin-bottom: 25px;
-  }
-  .testo2 p,
-  .testo3 p {
-    font-size: 22px;
-    line-height: 1.8;
-    padding-right: 20px;
+@media (max-width: 1920px) {
+  .contenitore2 {
+    display: flex;
+    flex-direction: row;
   }
   .card {
     max-width: 300px;
