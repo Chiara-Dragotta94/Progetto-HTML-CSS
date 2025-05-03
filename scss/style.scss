@@ -7,11 +7,7 @@ $white: #ffffff;
 $black: black;
 $font-family: "Share Tech Mono", serif;
 
-/* === BASE === */
-body {
-  margin: 0;
-  padding: 0;
-}
+
 
 /* === NAVBAR === */
 .navbar {
@@ -365,219 +361,64 @@ ul {
 
 /* === MEDIA QUERIES === */
 
-//VERSIONE MOBILE//
-
-@media (max-width: 767.98px) {
-
-  //INDEX//
-
-  .row {
-    display: flex;
-    flex-direction: column;
-    padding-right: 50px;
-    padding-bottom: 50px;
-  }
-
-.testo {
-  margin-top: 70px;
-}
-
-.testo h1 {
-  font-size: 45px;
-}
-
-.testo h3 {
-  font-size: 35px;
-}
-
-.card {
-  width: 200px;
-  height: auto;
-}
-
-.sezione {
-  padding:  100px 130px;
-}
-
-.immagine2 {
-  width: 100%;
-}
-
-.testo2 {
-  margin-left: 50px;
-  height: 300px;
-  display: flex;
-  width: 100%;
-}
- 
-.testo2 h1 {
-  font-size: 40px;
-  text-align: center;
-  padding-right: 25px;
-}
-
-.testo2 p {
-  font-size: 14px;
-  text-align: justify;
-  width: 100%;
-  padding-right: 30px;
-  padding-bottom: 20px;
-}
-
-  //LA MIA STORIA//
-
-  .testo3 {
-    display: flex;
-    width: 100%;
-  }
-   
-  .testo3 h1 {
-    font-size: 40px;
+/* Mobile piccoli: max 576px */
+@media (max-width: 576px) {
+  .navbar-collapse {
+    font-size: medium;
     text-align: center;
-    
-  }
-  
-  .testo3 p {
-    font-size: 14px;
-    text-align: justify;
-    width: 100%;
-
   }
 
-  .immagine3 {
-    width: 100%;
-    align-self: center;
-  }
-
-  //CURRICULUM//
-
-  .profilo {
-    width: 100px;
-    margin-left: -75px;
-  }
-
-  .info h1 {
-    font-size: 20px;
-  }
-
-  .info h2 {
-    font-size: 16px;
-  }
-
-  .section h2 {
-    font-size: 16px;
-  }
-
-  .section p,
-  .section ul {
-    font-size: 13px;
-  }
-
-  .autorizzo {
-    font-size: 13px;
-  }
-
-  .container-curriculum {
-    padding: 20px;
-  }
-
-  .content {
-    gap: 70px;
-    padding: 0;
-  }
-
-  .header-curriculum {
-    padding-left: 30px;
-    
-  }
-
-  //CONTATTAMI//
-
-  .container-form {
-    width: 90%;
-    padding: 20px;
-    margin: 20px auto;
-    max-height: unset; 
-    box-sizing: border-box;
-    }
-
-    .col-md-6 {
-      margin-left: 40px;
-    }
-
-    .text-center {
-      margin-left: 40px;
-    }
-
-
-}
-
-//VERSIONE TABLET//
-
-/*@media (min-width: 768px) and (max-width:1024px) {
-  .contenitore,
-  .contenitore2,
-  .contenitore3,
-  .content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contenitore2,
-  .contenitore3,
-  .sezione {
-    padding: 30px;
-  }
-
-  .immagine2,
-  .immagine3 {
-    width: 90%;
+  .navbar-brand {
+    width: 60px;
     height: auto;
   }
 
-  .testo {
-    margin-top: 80px;
+  .contenitore,
+  .contenitore2,
+  .contenitore3 {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
 
-    h1 {
-      font-size: 50px;
-    }
+  .testo h1 {
+    font-size: 40px;
+  }
 
-    h3 {
-      font-size: 36px;
-    }
+  .testo h3 {
+    font-size: 28px;
   }
 
   .testo2,
   .testo3 {
-    width: 90%;
-    text-align: center;
-    margin-bottom: 30px;
+    width: 100%;
+    padding: 0 10px;
+  }
 
-    h1 {
-      font-size: 30px;
-    }
+  .immagine2,
+  .immagine3 {
+    width: 100%;
+  }
 
-    p {
-      font-size: 16px;
-    }
+  .sezione {
+    padding: 30px;
   }
 
   .row {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    flex-wrap: nowrap;
-    justify-content: center;
   }
 
   .card {
-    max-width: 220px;
-    margin: 0 auto;
+    max-width: 90%;
   }
 
   .header-curriculum {
-    padding-left: 50px;
-    gap: 50px;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 0;
+    padding-right: 0;
   }
 
   .profilo {
@@ -585,94 +426,136 @@ ul {
   }
 
   .info h1 {
-    font-size: 26px;
-  }
-
-  .info h2 {
-    font-size: 18px;
-  }
-
-  .section h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .content {
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    padding-right: 30px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-left: 0;
   }
 
-  .section p,
-  .section ul {
-    font-size: 14px;
+  .container-form {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
   }
 
-  .autorizzo {
-    font-size: 14px;
+  label {
+    min-width: auto !important;
+  }
+}
+
+/* Tablet: da 577px a 768px */
+@media (min-width: 577px) and (max-width: 768px) {
+  .testo h1 {
+    font-size: 50px;
   }
 
-  .footer .row-custom {
-    flex-direction: column;
-    text-align: center;
+  .testo h3 {
+    font-size: 35px;
   }
 
-  .container-form .row > div.col-md-6 {
+  .testo2,
+  .testo3,
+  .immagine2,
+  .immagine3 {
     width: 100%;
   }
 
-  .btn-custom {
-    font-size: 14px;
-  }
-}*/
-
-
-
-
-// VERSIONE DESKTOP//
-
-@media (min-width: 1440px) {
-  .contenitore2,
-  .contenitore {
-    padding: 100px 120px;
-    padding-bottom: 200px;
-    gap: 100px;
+  .content {
+    grid-template-columns: 1fr;
+    gap: 50px;
   }
 
-  .contenitore3 {
-    padding: 100px 120px;
-    gap: 80px;
+  .row {
+    flex-wrap: wrap;
+    gap: 30px;
   }
-  
-  .immagine2,
-  .immagine3 {
-    width: 52%;
+
+  .card {
+    max-width: 80%;
+  }
+
+  .container-form {
+    max-width: 95%;
+    padding-left: 15px;
+  }
+}
+
+/* Schermi medi: da 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .testo h1 {
+    font-size: 60px;
+  }
+
+  .testo h3 {
+    font-size: 40px;
   }
 
   .testo2,
   .testo3 {
-width: 45%;
-text-align: left;
+    width: 100%;
+  }
+
+  .immagine2,
+  .immagine3 {
+    width: 100%;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 300px;
+  }
+
+  .container-form {
+    max-width: 95%;
+  }
 }
 
-.immagine3, .testo3 {
-height: auto;
+/* Schermi grandi ma non ultra-wide: da 1025px a 1366px */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .contenitore2,
+  .contenitore3 {
+    gap: 40px;
+    padding: 40px 30px;
+  }
+
+  .testo2,
+  .testo3 {
+    width: 48%;
+  }
+
+  .immagine2,
+  .immagine3 {
+    width: 48%;
+  }
+
+  .content {
+    gap: 60px;
+    padding-left: 30px;
+  }
+
+  .card {
+    max-width: 230px;
+  }
+
+  .container-form {
+    max-width: 90%;
+  }
 }
 
 
-.testo2 h1,
-.testo3 h1 {
-font-size: 56px;
-}
 
-.card {
-max-width: 300px;
-}
 
-.sezione {
-padding-left: 180px;
-}
-
-}
 
 
