@@ -379,7 +379,7 @@ ul {
 
 //VERSIONE TABLET//
 
-@media (max-width: 991.98px) {
+@media (max-width: 1366px) {
   .contenitore,
   .contenitore2,
   .contenitore3,
@@ -601,17 +601,48 @@ margin-bottom: 5px;
 }
 
 
-// VERSIONE DESKTOP (1366px e oltre)
-@media (max-width: 1920px) {
+// VERSIONE DESKTOP//
 
-  .contenitore2{
-   display: flex;
-   flex-direction: row;
-   
+@media (min-width: 1367px) {
+  .contenitore2,
+  .contenitore {
+    padding: 100px 120px;
+    padding-bottom: 200px;
+    gap: 100px;
   }
 
+  .contenitore3 {
+    padding: 100px 120px;
+    gap: 80px;
+  }
   
-  .card {
-    max-width: 300px;
+  .immagine2,
+  .immagine3 {
+    width: 52%;
   }
+
+  .testo2,
+  .testo3 {
+width: 45%;
+text-align: left;
+}
+
+.immagine3, .testo3 {
+height: auto;
+}
+
+
+.testo2 h1,
+.testo3 h1 {
+font-size: 56px;
+}
+
+.card {
+max-width: 300px;
+}
+
+.sezione {
+padding-left: 180px;
+}
+
 }

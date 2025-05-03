@@ -528,47 +528,38 @@ label {
 }
 
 @media (min-width: 1367px) {
- 
-
+  .contenitore2,
   .contenitore {
     padding: 100px 120px;
     padding-bottom: 200px;
     gap: 100px;
   }
-
   .contenitore3 {
     padding: 100px 120px;
     gap: 80px;
   }
-
-.immagine3, .testo3 {
-height: auto;
-}
-
-  .card {
-    max-width: 300px;
-  }  
+  .immagine2,
+  .immagine3 {
+    width: 52%;
+  }
+  .testo2,
+  .testo3 {
+    width: 45%;
+    text-align: left;
+  }
+  .immagine3, .testo3 {
+    height: auto;
+  }
   .testo2 h1,
   .testo3 h1 {
     font-size: 56px;
-    margin-bottom: 25px;
-  }
-  .testo2 p,
-  .testo3 p {
-    font-size: 22px;
-    line-height: 1.8;
-    padding-right: 20px;
   }
   .card {
     max-width: 300px;
   }
-
   .sezione {
-   padding-left: 180px;
+    padding-left: 180px;
   }
-
 }
-
-
 
 /*# sourceMappingURL=style.css.map */
