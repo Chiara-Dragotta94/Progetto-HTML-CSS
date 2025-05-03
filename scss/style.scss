@@ -396,35 +396,63 @@ ul {
 }
 
 .sezione {
-  padding: 50px; 
+  padding:  100px 130px;
 }
 
+.immagine2 {
+  width: 100%;
 }
 
+.testo2 {
+  margin-left: 50px;
+  height: 300px;
+  display: flex;
+  width: 100%;
+}
+ 
+.testo2 h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-right: 25px;
+}
 
+.testo2 p {
+  font-size: 14px;
+  text-align: justify;
+  width: 100%;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
 
+  //LA MIA STORIA//
 
-/*@media (max-width: 767.98px) {
-  .testo h1 {
-    font-size: 36px;
+  .testo3 {
+    display: flex;
+    width: 100%;
   }
-
-  .testo h3 {
-    font-size: 28px;
-  }
-
-  .testo2 h1,
+   
   .testo3 h1 {
-    font-size: 22px;
+    font-size: 40px;
+    text-align: center;
+    
   }
-
-  .testo2 p,
+  
   .testo3 p {
     font-size: 14px;
+    text-align: justify;
+    width: 100%;
+
   }
 
+  .immagine3 {
+    width: 100%;
+    align-self: center;
+  }
+
+  //CURRICULUM//
+
   .profilo {
-    width: 80px;
+    width: 100px;
     margin-left: -75px;
   }
 
@@ -454,62 +482,35 @@ ul {
   }
 
   .content {
-    gap: 30px;
+    gap: 70px;
     padding: 0;
   }
 
-  .sezione {
+  .header-curriculum {
+    padding-left: 30px;
+    
+  }
+
+  //CONTATTAMI//
+
+  .container-form {
+    width: 90%;
     padding: 20px;
-  }
+    margin: 20px auto;
+    max-height: unset; 
+    box-sizing: border-box;
+    }
 
-  .card {
-    max-width: 200px;
-    margin: 0 auto;
-  }
+    .col-md-6 {
+      margin-left: 40px;
+    }
 
-  .navbar-brand {
-    width: 60px;
-    height: 40px;
-    margin-bottom: 10px;
-  }
+    .text-center {
+      margin-left: 40px;
+    }
 
-  .social-icons a {
-    font-size: 20px;
-    margin: 0 5px;
-  }
 
-  .btn-custom {
-    font-size: 13px;
-  }
 }
-.container-form {
-width: 90%;
-padding: 20px;
-margin: 20px auto;
-max-height: unset; 
-box-sizing: border-box;
-}
-
-.container-form .row {
-flex-direction: column;
-}
-
-.container-form .col-md-6 {
-width: 100% !important;
-margin-bottom: 15px;
-}
-
-.form-control {
-width: 100%;
-box-sizing: border-box;
-}
-
-label {
-min-width: unset !important;
-width: 100%;
-display: block;
-margin-bottom: 5px;
-}*/
 
 //VERSIONE TABLET//
 
@@ -630,7 +631,7 @@ margin-bottom: 5px;
 
 // VERSIONE DESKTOP//
 
-/*@media (min-width: 1440px) {
+@media (min-width: 1440px) {
   .contenitore2,
   .contenitore {
     padding: 100px 120px;
@@ -672,6 +673,6 @@ max-width: 300px;
 padding-left: 180px;
 }
 
-}*/
+}
 
 

@@ -355,115 +355,90 @@ ul li {
     height: auto;
   }
   .sezione {
-    padding: 50px;
+    padding: 100px 130px;
   }
-}
-/*@media (max-width: 767.98px) {
-  .testo h1 {
-    font-size: 36px;
+  .immagine2 {
+    width: 100%;
   }
-
-  .testo h3 {
-    font-size: 28px;
+  .testo2 {
+    margin-left: 50px;
+    height: 300px;
+    display: flex;
+    width: 100%;
   }
-
-  .testo2 h1,
+  .testo2 h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-right: 25px;
+  }
+  .testo2 p {
+    font-size: 14px;
+    text-align: justify;
+    width: 100%;
+    padding-right: 30px;
+    padding-bottom: 20px;
+  }
+  .testo3 {
+    display: flex;
+    width: 100%;
+  }
   .testo3 h1 {
-    font-size: 22px;
+    font-size: 40px;
+    text-align: center;
   }
-
-  .testo2 p,
   .testo3 p {
     font-size: 14px;
+    text-align: justify;
+    width: 100%;
   }
-
+  .immagine3 {
+    width: 100%;
+    align-self: center;
+  }
   .profilo {
-    width: 80px;
+    width: 100px;
     margin-left: -75px;
   }
-
   .info h1 {
     font-size: 20px;
   }
-
   .info h2 {
     font-size: 16px;
   }
-
   .section h2 {
     font-size: 16px;
   }
-
   .section p,
   .section ul {
     font-size: 13px;
   }
-
   .autorizzo {
     font-size: 13px;
   }
-
   .container-curriculum {
     padding: 20px;
   }
-
   .content {
-    gap: 30px;
+    gap: 70px;
     padding: 0;
   }
-
-  .sezione {
+  .header-curriculum {
+    padding-left: 30px;
+  }
+  .container-form {
+    width: 90%;
     padding: 20px;
+    margin: 20px auto;
+    max-height: unset;
+    box-sizing: border-box;
   }
-
-  .card {
-    max-width: 200px;
-    margin: 0 auto;
+  .col-md-6 {
+    margin-left: 40px;
   }
-
-  .navbar-brand {
-    width: 60px;
-    height: 40px;
-    margin-bottom: 10px;
-  }
-
-  .social-icons a {
-    font-size: 20px;
-    margin: 0 5px;
-  }
-
-  .btn-custom {
-    font-size: 13px;
+  .text-center {
+    margin-left: 40px;
   }
 }
-.container-form {
-width: 90%;
-padding: 20px;
-margin: 20px auto;
-max-height: unset; 
-box-sizing: border-box;
-}
-
-.container-form .row {
-flex-direction: column;
-}
-
-.container-form .col-md-6 {
-width: 100% !important;
-margin-bottom: 15px;
-}
-
-.form-control {
-width: 100%;
-box-sizing: border-box;
-}
-
-label {
-min-width: unset !important;
-width: 100%;
-display: block;
-margin-bottom: 5px;
-}*/
 /*@media (min-width: 768px) and (max-width:1024px) {
   .contenitore,
   .contenitore2,
@@ -575,48 +550,39 @@ margin-bottom: 5px;
     font-size: 14px;
   }
 }*/
-/*@media (min-width: 1440px) {
+@media (min-width: 1440px) {
   .contenitore2,
   .contenitore {
     padding: 100px 120px;
     padding-bottom: 200px;
     gap: 100px;
   }
-
   .contenitore3 {
     padding: 100px 120px;
     gap: 80px;
   }
-
   .immagine2,
   .immagine3 {
     width: 52%;
   }
-
   .testo2,
   .testo3 {
-width: 45%;
-text-align: left;
+    width: 45%;
+    text-align: left;
+  }
+  .immagine3, .testo3 {
+    height: auto;
+  }
+  .testo2 h1,
+  .testo3 h1 {
+    font-size: 56px;
+  }
+  .card {
+    max-width: 300px;
+  }
+  .sezione {
+    padding-left: 180px;
+  }
 }
-
-.immagine3, .testo3 {
-height: auto;
-}
-
-
-.testo2 h1,
-.testo3 h1 {
-font-size: 56px;
-}
-
-.card {
-max-width: 300px;
-}
-
-.sezione {
-padding-left: 180px;
-}
-
-}*/
 
 /*# sourceMappingURL=style.css.map */
