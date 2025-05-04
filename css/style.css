@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* === VARIABILI === */
 /* === NAVBAR === */
 .navbar {
@@ -338,7 +337,7 @@ ul li {
   font-weight: 500;
 }
 
-/* === MEDIA QUERY SOLO PER MOBILE === */
+/* === MEDIA QUERY PER MOBILE === */
 @media (max-width: 576px) {
   .row {
     flex-direction: column;
@@ -370,7 +369,7 @@ ul li {
   .testo2,
   .testo3 {
     width: 100%;
-    text-align: center; /* Centra i contenuti */
+    text-align: center;
   }
   .testo h1 {
     font-size: 40px;
@@ -401,7 +400,7 @@ ul li {
     min-width: auto !important;
   }
 }
-/* === MEDIA QUERY SOLO PER TABLET === */
+/* === MEDIA QUERY PER TABLET === */
 @media (min-width: 577px) and (max-width: 768px) {
   .row {
     flex-direction: column;
@@ -464,7 +463,7 @@ ul li {
     min-width: auto !important;
   }
 }
-/* === MEDIA QUERY PER SCHERMI PIÙ GRANDI DI 1366px (Desktop) === */
+/* === MEDIA QUERY PER DESKTOP === */
 @media (min-width: 1367px) {
   .sezione {
     padding: 80px 150px;
