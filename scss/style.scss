@@ -97,8 +97,8 @@ img {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; /* Centrato */
+  align-items: center; /* Centrato */
   flex-wrap: wrap;
   gap: 60px;
   background-color: $white;
@@ -107,8 +107,10 @@ img {
 
 .immagine2,
 .immagine3 {
-  width: 50%;
+  width: 100%; /* Assicura la fluidità */
+  max-width: 600px; /* Impostazione massima per le immagini */
   height: auto;
+  transition: all 0.3s ease; /* Fluidità nelle transizioni */
 
   img {
     width: 100%;
@@ -122,7 +124,8 @@ img {
 .testo2,
 .testo3 {
   font-family: $font-family;
-  width: 45%;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,7 +155,7 @@ img {
 .sezione {
   width: 100%;
   min-height: 80vh;
-  padding: 50px 50px 50px 150px;
+  padding-left: 120px;
   background-color: $light-bg-color;
   display: flex;
   flex-direction: column;
@@ -161,25 +164,17 @@ img {
 }
 
 .row {
-  width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 40px;
-
-  @media (min-width: 1025px) {
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    align-items: center;
-  }
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .card {
-  flex: 1 1 250px;
+  flex: 1 1 30%;
   max-width: 250px;
   border-radius: 15px;
   border: 1px solid $black;
@@ -215,7 +210,7 @@ img {
 /* === FOOTER === */
 footer {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
@@ -227,16 +222,6 @@ footer {
   .footer-col {
     flex: 1 1 30%;
     min-width: 200px;
-    text-align: center;
-  }
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    align-items: center;
-
-    .footer-col {
-      width: 100%;
-    }
   }
 }
 
@@ -260,7 +245,7 @@ footer {
 .container-form {
   font-family: $font-family;
   max-width: 800px;
-  max-height: 550px;
+  height: auto;
   padding-top: 45px;
   border: 1px solid $black;
   background-color: $light-bg-color;
@@ -385,17 +370,29 @@ ul {
   font-weight: 500;
 }
 
-/* === MEDIA QUERIES === */
-
+/* === MEDIA QUERY SOLO PER MOBILE === */
 @media (max-width: 576px) {
-  .navbar-collapse {
-    font-size: medium;
-    text-align: center;
+  .row {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
-  .navbar-brand {
-    width: 60px;
-    height: auto;
+  .sezione {
+    padding: 50px 120px;
+  }
+
+  .card {
+    max-width: 200px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+
+    .footer-col {
+      width: 100%;
+    }
   }
 
   .contenitore,
@@ -406,31 +403,20 @@ ul {
     gap: 30px;
   }
 
+  .immagine2,
+  .immagine3,
+  .testo2,
+  .testo3 {
+    width: 100%;
+    text-align: center; /* Centra i contenuti */
+  }
+
   .testo h1 {
     font-size: 40px;
   }
 
   .testo h3 {
     font-size: 28px;
-  }
-
-  .testo2,
-  .testo3 {
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  .immagine2,
-  .immagine3 {
-    width: 100%;
-  }
-
-  .sezione {
-    padding: 30px;
-  }
-
-  .card {
-    max-width: 90%;
   }
 
   .header-curriculum {
@@ -440,134 +426,134 @@ ul {
     padding-right: 0;
   }
 
-  .profilo {
-    width: 150px;
-  }
-
-  .info h1 {
-    font-size: 24px;
-  }
-
   .content {
     grid-template-columns: 1fr;
     gap: 40px;
     padding-left: 0;
   }
 
+  .profilo {
+    width: 150px;
+  }
+
   .container-form {
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 100%;
+    width: 400px !important;
   }
 
   label {
     min-width: auto !important;
   }
-
-  footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .row {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
 }
 
-/* Tablet: da 577px a 768px */
+/* === MEDIA QUERY SOLO PER TABLET === */
 @media (min-width: 577px) and (max-width: 768px) {
-  .testo h1 {
-    font-size: 50px;
-  }
-
-  .testo h3 {
-    font-size: 35px;
-  }
-
-  .testo2,
-  .testo3,
-  .immagine2,
-  .immagine3 {
-    width: 100%;
-  }
-
-  .content {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .card {
-    max-width: 80%;
-  }
-
-  .container-form {
-    max-width: 95%;
-    padding-left: 15px;
-  }
-
-  footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   .row {
     flex-direction: column;
     align-items: center;
-  }
-}
-
-/* Laptop e Desktop: da 1025px */
-@media (min-width: 1025px) {
-  .contenitore2,
-  .contenitore3 {
-    gap: 40px;
-    padding: 40px 30px;
+    flex-wrap: wrap;
   }
 
-  .testo2,
-  .testo3 {
-    width: 48%;
-  }
-
-  .immagine2,
-  .immagine3 {
-    width: 48%;
-  }
-
-  .content {
-    gap: 60px;
-    padding-left: 30px;
+  .sezione {
+    padding: 50px 150px;
   }
 
   .card {
     max-width: 250px;
   }
 
-  .container-form {
-    max-width: 90%;
+  footer {
+    flex-direction: column;
+    align-items: center;
+
+    .footer-col {
+      width: 100%;
+    }
   }
 
-  footer {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+  .contenitore,
+  .contenitore2,
+  .contenitore3 {
+    flex-direction: column;
+    padding: 20px;
     gap: 30px;
   }
 
-  .row {
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
+  .immagine2,
+  .immagine3,
+  .testo2,
+  .testo3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .testo h1 {
+    font-size: 44px;
+  }
+
+  .testo h3 {
+    font-size: 30px;
+  }
+
+  .header-curriculum {
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .content {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding-left: 0;
+  }
+
+  .profilo {
+    width: 160px;
+  }
+
+  .container-form {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 600px !important;
+  }
+
+  label {
+    min-width: auto !important;
   }
 }
 
+/* === MEDIA QUERY PER SCHERMI PIÙ GRANDI DI 1366px (Desktop) === */
+@media (min-width: 1367px) {
+  .sezione {
+    padding: 80px 150px;
+  }
 
+  .card {
+    max-width: 300px;
+  }
 
+  .contenitore,
+  .contenitore2,
+  .contenitore3 {
+    gap: 80px;
+  }
 
+  .testo h1 {
+    font-size: 80px;
+  }
 
+  .testo h3 {
+    font-size: 60px;
+  }
 
+  .container-form {
+    max-width: 1000px !important;
+  }
+
+  .header-curriculum {
+    gap: 100px;
+  }
+}
 
