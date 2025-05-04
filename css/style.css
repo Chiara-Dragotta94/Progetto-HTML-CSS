@@ -81,39 +81,39 @@ img {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  justify-content: center; /* Centrato */
-  align-items: center; /* Centrato */
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 60px;
   background-color: #ffffff;
   padding: 50px;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .immagine2,
-.immagine3 {
-  width: 100%; /* Assicura la fluidità */
-  max-width: 600px; /* Impostazione massima per le immagini */
-  height: auto;
-  transition: all 0.3s ease; /* Fluidità nelle transizioni */
+.immagine3,
+.testo2,
+.testo3 {
+  flex: 1 1 45%;
+  max-width: 600px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 .immagine2 img,
 .immagine3 img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
-  align-self: center;
-  display: block;
 }
 
 .testo2,
 .testo3 {
   font-family: "Share Tech Mono", serif;
-  width: 100%;
-  max-width: 600px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 .testo2 h1,
 .testo3 h1 {
@@ -124,11 +124,6 @@ img {
 .testo3 p {
   font-size: 20px;
   text-align: justify;
-}
-
-.testo3 {
-  justify-content: space-between;
-  text-align: left;
 }
 
 .reverse {
@@ -477,16 +472,8 @@ ul li {
   .card {
     max-width: 300px;
   }
-  .contenitore,
-  .contenitore2,
-  .contenitore3 {
+  .contenitore {
     gap: 80px;
-  }
-  .testo h1 {
-    font-size: 80px;
-  }
-  .testo h3 {
-    font-size: 60px;
   }
   .container-form {
     max-width: 1000px !important;
@@ -494,6 +481,27 @@ ul li {
   .header-curriculum {
     gap: 100px;
   }
+}
+.contenitore2,
+.contenitore3 {
+  gap: 100px;
+  padding: 60px 100px;
+}
+
+.immagine2,
+.immagine3,
+.testo2,
+.testo3 {
+  flex: 1 1 45%;
+  max-width: 650px;
+}
+
+.testo h1 {
+  font-size: 80px;
+}
+
+.testo h3 {
+  font-size: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
